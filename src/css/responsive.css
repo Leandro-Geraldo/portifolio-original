@@ -29,6 +29,7 @@
         color: var(--text-color);
         display: block;
     }
+
     .navbar{
         position: absolute;
         top: 100%;
