@@ -1,0 +1,147 @@
+@media(max-width: 1200px){
+    .portifolio-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills h2{
+        margin-bottom: 5rem;
+    }
+}
+
+@media(max-width: 991px){
+    .header{
+        padding: 2rem 3%;
+    }
+
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width: 768px){
+    #menu-icon{
+        font-size: 3.6rem;
+        color: var(--text-color);
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+        transition: .3s ease;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .home-img{
+        padding: 4em 0;
+    }
+
+    .home-img img{
+        width: 50vw;
+    }
+
+    .home h3{
+        font-size: 3rem;
+    }
+
+    .home h1{
+        font-size: 4rem;
+    }
+
+    .home p{
+        font-size: 1.7rem;
+    }
+
+    /*about*/
+
+    .about{
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    .about-img img{
+        width: 50vw;
+    }
+
+    .about-content{
+        text-align: center;
+    }
+
+    .about-content h2{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .about-content h3{
+        font-size: 3rem;
+    }
+
+    .about-content p {
+        font-size: 1.5rem;
+    }
+
+    .heading{
+        font-size: 4rem;
+    }
+
+    .portifolio{
+        padding-bottom: 5rem;
+    }
+}
+
+
+@media(max-width: 614px){
+    .portifolio-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .home-img img{
+        width: 70vw;
+    }
+
+    .about-img img{
+        width: 70vw;
+    }
+}
+
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
+
+@media(max-width: 375px){
+    .skills{
+        margin-bottom: 5rem;
+    }    
+}
