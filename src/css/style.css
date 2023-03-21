@@ -226,8 +226,11 @@ section{
 
 .skill{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    max-width: 30rem;
 }
 
 .skill img{
@@ -241,8 +244,11 @@ section{
 .skill-html,
 .skill-css,
 .skill-js,
-.skill-git{
+.skill-git,
+.skill-vscode,
+.skill-figma{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
@@ -265,6 +271,14 @@ section{
 
 .skill-git{
     box-shadow: -.5px 5px 5px #ef4444;
+}
+
+.skill-vscode{
+    box-shadow: -.5px 5px 5px #3064f1;
+}
+
+.skill-figma{
+    box-shadow: -.5px 5px 5px #a303bc;
 }
 
 .soft-skills{
