@@ -61,6 +61,29 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.bx.bx-down-arrow-alt{
+    position: absolute;
+    font-size: 6rem;
+    color: var(--main-color);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: floatArrow .8s ease-in-out infinite ;
+}
+
+@keyframes floatArrow{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(1.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .home-content h3{
@@ -152,10 +175,10 @@ section{
 }
 
 .about-img img{
-    width: 35vw;
-    border-radius: 50%;
-    border: 1px solid var(--main-color);
-    box-shadow: 1rem 1rem 1rem var(--main-color);
+    width: 32vw;
+    border-radius: 50% 0;
+    box-shadow: 1rem 1rem 1rem var(--bg-color);
+    transition: .3s;
 }
 
 .about-content h2{
@@ -257,30 +280,6 @@ section{
     border-radius:15px ;
 }
 
-.skill-html{
-    box-shadow: -.5px 5px 5px #f97316;
-}
-
-.skill-css{
-    box-shadow: -.5px 5px 5px #1d4ed8;
-}
-
-.skill-js{
-    box-shadow: -.5px 5px 5px #eab308;
-}
-
-.skill-git{
-    box-shadow: -.5px 5px 5px #ef4444;
-}
-
-.skill-vscode{
-    box-shadow: -.5px 5px 5px #3064f1;
-}
-
-.skill-figma{
-    box-shadow: -.5px 5px 5px #a303bc;
-}
-
 .soft-skills{
     display: flex;
     justify-content: space-evenly;
@@ -342,7 +341,7 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba( 0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba( 0, 0, 0, .1), var(--bg-color));
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -412,7 +411,7 @@ section{
     font-size: 1.6rem;
     color: var(--text-color);
     background: var(--second-bg-color);
-    margin: .7rem auto;
+    margin: .7rem 0;
     border-radius: .8rem;
 }
 
@@ -422,11 +421,18 @@ section{
 
 .contact form textarea{
     resize: none;
+    font-family: 'Poppins';
 }
 
 .contact form .btn{
     margin-top: 2.5rem;
     cursor: pointer;
+}
+
+.contact form .input-box input[type=number]::-webkit-outer-spin-button,
+.contact form .input-box input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /*FOOTER*/

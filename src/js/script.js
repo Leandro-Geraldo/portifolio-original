@@ -47,10 +47,10 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .skills-content, .portifolio-container, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content, .heading, .about-content .p3', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .skills-content, .portifolio-container, .contact form, .about-content .p1', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img ', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content .p2', { origin: 'left' });
 
 // ===============Typed js================ 
 
